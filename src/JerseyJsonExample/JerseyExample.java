@@ -11,62 +11,57 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/customerxml")
 public class JerseyExample {
-	
-	/*@GET
+
+	@GET
 	@Path("/{custId}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Customer getJsonExample(@PathParam("custId") int id) {
-		Customer c=new Customer();
+		Customer c = new Customer();
 		c.setCustId(id);
 		c.setCustName("radha");
 		c.setCustNum("456567");
 		return c;
-	}*/
-	
-	
-	/*@GET
+	}
+
+	@GET
 	@Path("/{custId}")
 	@Produces("text/html")
 	public void fetchMethod(@PathParam("custId") int id) {
-		System.out.println("id num "+ id+" detailes fetched successfully");
+		System.out.println("id num " + id + " detailes fetched successfully");
 	}
-	
+
 	@POST
 	@Path("/{custId}")
 	@Produces("text/html")
 	public void storeMethod(@PathParam("custId") int id) {
-		System.out.println("id num "+ id+" detailes stored successfully");
+		System.out.println("id num " + id + " detailes stored successfully");
 	}
 
-	
 	@PUT
 	@Path("/{custId}")
 	@Produces("text/html")
 	public void updateMethod(@PathParam("custId") int id) {
-		System.out.println("id num "+ id+" detailes updated successfully");
+		System.out.println("id num " + id + " detailes updated successfully");
 	}
-	
-	
+
 	@DELETE
 	@Path("/{custId}")
 	@Produces("text/html")
 	public void deleteMethod(@PathParam("custId") int id) {
-		System.out.println("id num "+ id+" detailes deleted successfully");
-	}*/
-	
+		System.out.println("id num " + id + " detailes deleted successfully");
+	}
+
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/{custId}")
 	public Customer getCustomerXml(@PathParam("custId") int id) {
-		Customer c=new Customer();
+		Customer c = new Customer();
 		c.setCustId(id);
 		c.setCustName("radha");
 		c.setCustNum("4547");
 		System.out.println("output in xml");
 		return c;
-		
+
 	}
-	
-	
-	
+
 }
