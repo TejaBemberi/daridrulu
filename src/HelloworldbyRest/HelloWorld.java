@@ -1,4 +1,4 @@
-/*package HelloworldbyRest;
+package HelloworldbyRest;
 
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
@@ -66,4 +66,3 @@ public class HelloWorld {
 		}
 
 }
-*/
